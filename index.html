@@ -12,22 +12,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="logo-papeleria.png" alt="Logo de Papelería Arkelin" class="logo">
-        <h1>Papelería Arkelin</h1>
-        
-        <nav>
-            <ul id="menu">
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#beneficios">Beneficios</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelería Arkelin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Papelería Arkelin</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="logo-papeleria.png" alt="Logo de Papelería Arkelin" class="logo">
+                <h1>Papelería Arkelin</h1>
+            </div>
+            
+            <nav>
+                <ul id="menu">
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Icono de menú hamburguesa -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
 
     <main>
         <section class="producto" id="ofertas">
@@ -159,5 +182,13 @@
         <p>Diseñado con <3 por tu equipo creativo.</p>
     </div>
 </footer>
+
+/* Esto es un scrip para el menu hamburguesa de javaScrip */
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+    }
+</script>
 </body>
 </html>
